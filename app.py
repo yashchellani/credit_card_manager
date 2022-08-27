@@ -33,11 +33,6 @@ def generate_creditcard():
     db = db_utils.get_db()
     data = cc_gen.generate_creditcard()
     return data
-
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
-
+    
 if __name__ == '__main__':
     app.run(host="localhost", port=5000)
