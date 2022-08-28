@@ -3,4 +3,5 @@ bson
 requests
 pymongo
 python-dotenv
+dnspython
 jwt
