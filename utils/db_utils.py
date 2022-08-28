@@ -20,3 +20,11 @@ def get_rejected_requests(db):
 def get_all_requests(db):
     all_requests = db["card-creation-requests"].find()
     return dumps(list(all_requests))
+
+def get_cardcreation_history(db):
+    cardcreation_history = db["card-creation-history"].find()
+    return dumps(list(cardcreation_history))
+
+def post_creditcard_history(db, credit_card):
+    db["card-creation-history"].insert_one(credit_card)
+    return "Post Credit Card Success", 200
