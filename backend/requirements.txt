@@ -1,0 +1,6 @@
+flask
+bson
+requests
+pymongo
+python-dotenv
+jwt
